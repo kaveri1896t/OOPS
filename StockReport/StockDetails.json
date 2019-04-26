@@ -1,0 +1,29 @@
+﻿{
+   "StockDetails": [
+
+   {
+         "StockName": "CapGemini",
+         "NumberOfShares":20.00,
+         "SharePrice":15000.00
+   },
+	
+   {
+         "StockName": "Wipro",
+         "NumberOfShares": 15,
+         "SharePrice": 17000.00
+   },
+
+   {
+         "StockName": "IBM",
+         "NumberOfShares": 25,
+         "SharePrice": 11000.00
+   },
+
+   {
+         "StockName": "Infosys",
+         "NumberOfShares": 23,
+         "SharePrice": 20000.00
+   }
+
+   ]
+}

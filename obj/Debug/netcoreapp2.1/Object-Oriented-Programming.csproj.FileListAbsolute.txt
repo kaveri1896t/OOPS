@@ -1,0 +1,11 @@
+C:\Users\admin\source\repos\BridgeLabz_2019\Object Oriented Programming\Object-Oriented-Programming\Object-Oriented-Programming\bin\Debug\netcoreapp2.1\Object-Oriented-Programming.deps.json
+C:\Users\admin\source\repos\BridgeLabz_2019\Object Oriented Programming\Object-Oriented-Programming\Object-Oriented-Programming\bin\Debug\netcoreapp2.1\Object-Oriented-Programming.runtimeconfig.json
+C:\Users\admin\source\repos\BridgeLabz_2019\Object Oriented Programming\Object-Oriented-Programming\Object-Oriented-Programming\bin\Debug\netcoreapp2.1\Object-Oriented-Programming.runtimeconfig.dev.json
+C:\Users\admin\source\repos\BridgeLabz_2019\Object Oriented Programming\Object-Oriented-Programming\Object-Oriented-Programming\bin\Debug\netcoreapp2.1\Object-Oriented-Programming.dll
+C:\Users\admin\source\repos\BridgeLabz_2019\Object Oriented Programming\Object-Oriented-Programming\Object-Oriented-Programming\obj\Debug\netcoreapp2.1\Object-Oriented-Programming.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\BridgeLabz_2019\Object Oriented Programming\Object-Oriented-Programming\Object-Oriented-Programming\obj\Debug\netcoreapp2.1\Object-Oriented-Programming.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\BridgeLabz_2019\Object Oriented Programming\Object-Oriented-Programming\Object-Oriented-Programming\obj\Debug\netcoreapp2.1\Object-Oriented-Programming.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\BridgeLabz_2019\Object Oriented Programming\Object-Oriented-Programming\Object-Oriented-Programming\obj\Debug\netcoreapp2.1\Object-Oriented-Programming.AssemblyInfo.cs
+C:\Users\admin\source\repos\BridgeLabz_2019\Object Oriented Programming\Object-Oriented-Programming\Object-Oriented-Programming\bin\Debug\netcoreapp2.1\Object-Oriented-Programming.pdb
+C:\Users\admin\source\repos\BridgeLabz_2019\Object Oriented Programming\Object-Oriented-Programming\Object-Oriented-Programming\obj\Debug\netcoreapp2.1\Object-Oriented-Programming.dll
+C:\Users\admin\source\repos\BridgeLabz_2019\Object Oriented Programming\Object-Oriented-Programming\Object-Oriented-Programming\obj\Debug\netcoreapp2.1\Object-Oriented-Programming.pdb
