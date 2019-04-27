@@ -31,13 +31,13 @@ namespace Object_Oriented_Programming.Regex
         public void RegularExpression()
         {
             ////Get input from user and validate the format
-            userDetails = utility.GetInput(userDetails);
+            this.userDetails = this.utility.GetInput(this.userDetails);
 
             ////Spilt the fist name and last name
-            string[] nameArray = userDetails.FullName.Split(" ");
+            string[] nameArray = this.userDetails.FullName.Split(" ");
 
             ////Call function to replace all string by its pattern
-            utility.ReplaceByPattern(nameArray[0], userDetails.FullName, userDetails.ContactNumber);
+            this.utility.ReplaceByPattern(nameArray[0], this.userDetails.FullName, this.userDetails.ContactNumber);
         }
     }
 }

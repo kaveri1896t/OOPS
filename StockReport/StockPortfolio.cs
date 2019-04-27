@@ -16,7 +16,9 @@ namespace Object_Oriented_Programming.StockReport
     /// </summary>
     public class StockPortfolio
     {
-        ////Instance of the File path to get json fule path
+        /// <summary>
+        /// The file path object
+        /// </summary>
         private FilePaths filePath = new FilePaths();
 
         /// <summary>

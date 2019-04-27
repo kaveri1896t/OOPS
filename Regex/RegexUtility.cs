@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="InputForRegex.cs" company="Bridgelabz">
+// <copyright file="RegexUtility.cs" company="Bridgelabz">
 // Copyright © 2019 Company="BridgeLabz"
 // </copyright>
 // <creator name="Kaveri Tekawade"/>
@@ -18,6 +18,8 @@ namespace Object_Oriented_Programming.Regex
         /// <summary>
         /// Gets the input from user.
         /// </summary>
+        /// <param name="userDetails">The user details.</param>
+        /// <returns>user details object</returns>
         public UserDetails GetInput(UserDetails userDetails)
         {
             try

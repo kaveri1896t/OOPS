@@ -1,87 +1,89 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="InventoryStructure.cs" company="Bridgelabz">
-// Copyright © 2019 Company="BridgeLabz"
+//   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
 // <creator name="Kaveri Tekawade"/>
 // --------------------------------------------------------------------------------------------------------------------
-namespace Object_Oriented_Programming
+namespace Object_Oriented_Programming.InventoryManagement
 {
     using System;
+    using System.Collections.Generic;
+    using System.Text;
 
     /// <summary>
-    /// Creating Structure of the inventory
+    /// Defines the structure of the inventory
     /// </summary>
     public class InventoryStructure
     {
         /// <summary>
-        /// The name of the product
+        /// The rice list
         /// </summary>
-        private string name;
+        private List<Rice> riceList = new List<Rice>();
 
         /// <summary>
-        /// The weight of the product
+        /// The wheat list
         /// </summary>
-        private double weight;
+        private List<Wheat> wheatList = new List<Wheat>();
 
         /// <summary>
-        /// The price per kg of the product
+        /// The pulses list
         /// </summary>
-        private double pricePerKg;
+        private List<Pulses> pulsesList = new List<Pulses>();
 
         /// <summary>
-        /// Gets or sets the name.
+        /// Gets or sets the rice list.
         /// </summary>
         /// <value>
-        /// The name.
+        /// The rice list.
         /// </value>
-        public string Name
+        public List<Rice> RiceList
         {
             get
             {
-                return this.name;
+                return this.riceList;
             }
 
             set
             {
-                this.name = value;
+                this.riceList = value;
             }
         }
 
         /// <summary>
-        /// Gets or sets the weight.
+        /// Gets or sets the wheat list.
         /// </summary>
         /// <value>
-        /// The weight.
+        /// The wheat list.
         /// </value>
-        public double Weight
+        public List<Wheat> WheatList
         {
             get
             {
-                return this.weight;
+                return this.wheatList;
             }
 
             set
             {
-                this.weight = value;
+                this.wheatList = value;
             }
         }
 
         /// <summary>
-        /// Gets or sets the Price Per Kg.
+        /// Gets or sets the pulses list.
         /// </summary>
         /// <value>
-        /// The price per kg.
+        /// The pulses list.
         /// </value>
-        public double PricePerKg
+        public List<Pulses> PulsesList
         {
             get
             {
-                return this.pricePerKg;
+                return this.pulsesList;
             }
 
             set
             {
-                this.pricePerKg = value;
+                this.pulsesList = value;
             }
         }
     }

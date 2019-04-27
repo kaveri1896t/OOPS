@@ -29,6 +29,9 @@ namespace Object_Oriented_Programming
                     Console.WriteLine("1.Inventory Details");
                     Console.WriteLine("2.Regular Expression");
                     Console.WriteLine("3.Stock Report");
+                    Console.WriteLine("4.Inventory Management");
+                    Console.WriteLine("5.Deck Of Cards");
+                    Console.WriteLine("6.Deck Of Cards using queue");
                     Console.WriteLine("\nEnter your choice : ");
                     choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -41,11 +44,25 @@ namespace Object_Oriented_Programming
                         case 2:
                             Regex.CheckRegularExpression regularExpression = new Regex.CheckRegularExpression();
                             regularExpression.RegularExpression();
-                            break;
+                            break; 
 
                         case 3:
                             StockReport.StockPortfolio stockPortfolio = new StockReport.StockPortfolio();
                             stockPortfolio.StockReport();
+                            break;
+
+                        case 4:
+                            InventoryManagement.FirstView.StartInventoryManager();
+                            break;
+
+                        case 5:
+                            Deck_Of_Cards.DeckOfCards deckOfCards = new Deck_Of_Cards.DeckOfCards();
+                            deckOfCards.StartGame();
+                            break;
+
+                        case 6:
+                            CardsQueue.DeckOfCardQueue deckOfCardQueue = new CardsQueue.DeckOfCardQueue();
+                            deckOfCardQueue.StartGame();
                             break;
 
                         default:
@@ -54,7 +71,6 @@ namespace Object_Oriented_Programming
 
                     Console.WriteLine("\nDo you want to continue in Main Menu (y/n) : ");
                     answer = Convert.ToChar(Console.ReadLine());
-
                 }
                 while (answer == 'y' || answer == 'Y');
             }
