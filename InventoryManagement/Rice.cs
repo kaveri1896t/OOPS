@@ -134,7 +134,7 @@ namespace Object_Oriented_Programming.InventoryManagement
                 }
             }
 
-            Console.WriteLine("Item " + itemName + "to be removed not found");
+            Console.WriteLine("Item " + itemName + " to be removed is not present...");
         }
 
         /// <summary>

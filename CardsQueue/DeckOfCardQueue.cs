@@ -1,4 +1,10 @@
-﻿namespace Object_Oriented_Programming.CardsQueue
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="DeckOfCardQueue.cs" company="Bridgelabz">
+// Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Kaveri Tekawade"/>
+// --------------------------------------------------------------------------------------------------------------------
+namespace Object_Oriented_Programming.CardsQueue
 {
     using System;
     using System.Collections.Generic;
@@ -105,7 +111,7 @@
         {
             ////Create instance of deck utility class
             Deck_Of_Cards.DeckUtility deckUtility = new Deck_Of_Cards.DeckUtility();
-            deckUtility.InitializeDeckOfCardsQueue();
+            deckUtility.InitializeDeckOfCards();
         }
     }
 }

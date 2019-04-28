@@ -1,15 +1,30 @@
-﻿namespace Object_Oriented_Programming.CardsQueue
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="LinkedList1.cs" company="Bridgelabz">
+// Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Kaveri Tekawade"/>
+// --------------------------------------------------------------------------------------------------------------------
+namespace Object_Oriented_Programming.CardsQueue
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
 
+    /// <summary>
+    /// Linked List 
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class LinkedList1<T>
     {
         /// <summary>
         /// The Head is pointing to the first node of the Linked List.
         /// </summary>
         internal NewNode<T> Head;
+
+        /// <summary>
+        /// The list is an instance of List
+        /// </summary>
+        internal List<T> list = new List<T>();
 
         /// <summary>
         /// Write to file 
@@ -135,6 +150,22 @@
             }
 
             return data;
+        }
+
+        /// <summary>
+        /// Reads the data from linked list into list.
+        /// </summary>
+        /// <param name="list">The list.</param>
+        /// <returns>list containing node data</returns>
+        public List<T> ReadIntoList(LinkedList1<T> list1)
+        {
+            NewNode<T> currentNode = this.Head;
+            while (currentNode != null)
+            {
+                list.Add(currentNode.NodeData);
+            }
+
+            return list;
         }
     }
 }

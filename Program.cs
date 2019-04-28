@@ -32,6 +32,8 @@ namespace Object_Oriented_Programming
                     Console.WriteLine("4.Inventory Management");
                     Console.WriteLine("5.Deck Of Cards");
                     Console.WriteLine("6.Deck Of Cards using queue");
+                    Console.WriteLine("7.Commercial Data Processing");
+                    Console.WriteLine("8.Address Book Details");
                     Console.WriteLine("\nEnter your choice : ");
                     choice = Convert.ToInt32(Console.ReadLine());
                     switch (choice)
@@ -44,7 +46,7 @@ namespace Object_Oriented_Programming
                         case 2:
                             Regex.CheckRegularExpression regularExpression = new Regex.CheckRegularExpression();
                             regularExpression.RegularExpression();
-                            break; 
+                            break;
 
                         case 3:
                             StockReport.StockPortfolio stockPortfolio = new StockReport.StockPortfolio();
@@ -63,6 +65,16 @@ namespace Object_Oriented_Programming
                         case 6:
                             CardsQueue.DeckOfCardQueue deckOfCardQueue = new CardsQueue.DeckOfCardQueue();
                             deckOfCardQueue.StartGame();
+                            break;
+
+                        case 7:
+                            Commercial_Data_Processing.StartCommercial start = new Commercial_Data_Processing.StartCommercial();
+                            start.InitialiseShares();
+                            break;
+
+                        case 8:
+                            Address_Book.StartAddressBook startAddress = new Address_Book.StartAddressBook();
+                            startAddress.InitialiseAddressBook();
                             break;
 
                         default:

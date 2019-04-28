@@ -113,7 +113,7 @@ namespace Object_Oriented_Programming.InventoryManagement
         {
             while (true)
             {
-                Console.WriteLine("\nEnter the Item name you want to remove");
+                Console.WriteLine("\nEnter the Item name you want to remove (All letters in upper case) : ");
                 string itemName = Console.ReadLine();
                 if (inventoryType.Equals("RICE"))
                 {

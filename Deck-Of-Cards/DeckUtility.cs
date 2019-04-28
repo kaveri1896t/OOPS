@@ -21,29 +21,27 @@
         /// </summary>
         internal List<int> PlayerList = new List<int>();
 
+        /// <summary>
+        /// The card queue is an object of card queue
+        /// </summary>
         internal CardsQueue.CardQueue<int> cardQueue = new CardsQueue.CardQueue<int>();
+
+        /// <summary>
+        /// The list1 is an instance of Linked List
+        /// </summary>
+        internal CardsQueue.LinkedList1<int> list1 = new CardsQueue.LinkedList1<int>();
 
         /// <summary>
         /// Initializes the deck of cards.
         /// </summary>
         public void InitializeDeckOfCards()
         {
-            for (int i = 1; i <= 4; i++)
-            {
-                PlayerList.Add(i);
-            }
-
-            ////Insert into queue
-            foreach (int number in PlayerList)
-            {
-                cardQueue.EnQueue(PlayerList, number);
-            }
-
             ////for each player.
             for (int playerNumber = 1; playerNumber <= 4; playerNumber++)
             {
                 ////Distribute cards to players
                 this.Distribute9CardsEach(playerNumber);
+
                 Console.WriteLine("player " + cards.player);
                 cards.player++;
                 Console.WriteLine("**************");
@@ -59,12 +57,29 @@
         /// </summary>
         public void InitializeDeckOfCardsQueue()
         {
+            for (int i = 1; i <= 4; i++)
+            {
+                PlayerList.Add(i);
+            }
+
+            ////Insert into queue
+            foreach (int number in PlayerList)
+            {
+                ////Insert player into queue
+                cardQueue.EnQueue(PlayerList, number);
+            }
+
+            ////Dequeue the players
+            list1 = cardQueue.DeQueue(list1, PlayerList);
+
+            ////Read data returned by the queue in list
+            PlayerList = list1.ReadIntoList(list1);
+
             ////for each player.
-            for (int playerNumber = 1; playerNumber <= 4; playerNumber++)
+            foreach (int playerNumber in PlayerList)
             {
                 ////Distribute cards to players
                 this.Distribute9CardsEach(playerNumber);
-
                 Console.WriteLine("player " + cards.player);
                 cards.player++;
                 Console.WriteLine("**************");
@@ -73,6 +88,7 @@
                 this.Print(playerNumber);
                 Console.WriteLine("**************");
             }
+            
         }
 
         /// <summary>

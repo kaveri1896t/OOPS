@@ -15,6 +15,11 @@ namespace Object_Oriented_Programming.InventoryManagement
     public class InventoryMngtUtility
     {
         /// <summary>
+        /// The file path to access path of inventory file
+        /// </summary>
+        internal static FilePaths filePath = new FilePaths();
+
+        /// <summary>
         /// Writes to file.
         /// </summary>
         /// <param name="inventoryTypes">The inventory types.</param>
@@ -23,7 +28,7 @@ namespace Object_Oriented_Programming.InventoryManagement
             ////Converting InventoryTypes Object to Json String
             string jsonAdddressBook = JsonConvert.SerializeObject(inventoryTypes);
             ////Wrinting Json String to file.
-            System.IO.File.WriteAllText("C:\\Users\\Bridge labz\\Desktop\\Inventory - Copy.json", jsonAdddressBook);
+            System.IO.File.WriteAllText(filePath.InventoryManagementFile, jsonAdddressBook);
         }
 
         /// <summary>

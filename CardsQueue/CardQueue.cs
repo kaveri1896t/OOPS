@@ -1,4 +1,10 @@
-﻿namespace Object_Oriented_Programming.CardsQueue
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="CardQueue.cs" company="Bridgelabz">
+// Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Kaveri Tekawade"/>
+// --------------------------------------------------------------------------------------------------------------------
+namespace Object_Oriented_Programming.CardsQueue
 {
     using System;
     using System.Collections.Generic;
@@ -6,6 +12,7 @@
     /// <summary>
     /// Cards game using queue
     /// </summary>
+    /// <typeparam name="T">Generic type</typeparam>
     public class CardQueue<T>
     {
         /// <summary>
