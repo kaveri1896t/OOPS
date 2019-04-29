@@ -26,22 +26,15 @@ namespace Object_Oriented_Programming.Commercial_Data_Processing
             double priceOfShare = 0;
             string symbol = string.Empty;
             string datetime = string.Empty;
-
+            string stringNumberOfShares;
             if (choosedOption == 1)
             {
-                while (true)
+                do
                 {
                     Console.WriteLine("Enter the Number of shares");
-                    string stringNumberOfShares = Console.ReadLine();
-                    if (InventoryManagement.InventoryMngtUtility.IsNumber(stringNumberOfShares) == false)
-                    {
-                        Console.WriteLine("Invalid input");
-                        continue;
-                    }
-
-                    numberOfShares = Convert.ToInt32(stringNumberOfShares);
-                    break;
+                    stringNumberOfShares = Console.ReadLine();
                 }
+                while (!InventoryManagement.InventoryMngtUtility.IsNumber(stringNumberOfShares));
 
                 while (true)
                 {
@@ -63,7 +56,7 @@ namespace Object_Oriented_Programming.Commercial_Data_Processing
                     string stringSymbol = Console.ReadLine();
                     if (InventoryManagement.InventoryMngtUtility.CheckString(stringSymbol))
                     {
-                        Console.WriteLine("Stock Symbol cant be empty");
+                        Console.WriteLine("Stock Symbol can't be empty");
                         continue;
                     }
 

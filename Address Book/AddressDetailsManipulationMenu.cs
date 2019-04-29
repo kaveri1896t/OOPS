@@ -27,7 +27,7 @@ namespace Object_Oriented_Programming.Address_Book
             Console.WriteLine("Enter the First Name you want to edit");
             nameToEdit = Console.ReadLine();
 
-            if (AddressDetails.DoesNameExist(nameToEdit, bookName) == false)
+            if (AddressDetails.DoesFileNameExist(nameToEdit, bookName) == false)
             {
                 Console.WriteLine("The Name You Entered Does not Exist");
                 return;

@@ -33,12 +33,12 @@ namespace Object_Oriented_Programming.Commercial_Data_Processing
             {
                 string jsonData = File.ReadAllText(filePath.CompanyShareFile);
 
-                ////Getting List<CompanyShares> object from JsonFile.
+                ////Getting List of CompanyShares type object from JsonFile.
                 List<CompanyShares> jsonObjectArray = JsonConvert.DeserializeObject<List<CompanyShares>>(jsonData);
 
                 ////Adding All the CompanyShares Object to CustomLinkedLsit.
                 foreach (CompanyShares cs in jsonObjectArray)
-                {
+                { 
                     companysharesLinkedList.AddLastIntoLinkedList(companysharesLinkedList, jsonObjectArray, cs);
                 }
 

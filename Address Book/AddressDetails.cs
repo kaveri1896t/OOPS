@@ -179,7 +179,7 @@ namespace Object_Oriented_Programming.Address_Book
         }
 
         /// <summary>
-        /// Gets the first name list.
+        /// Gets the first name into the List of type string.
         /// </summary>
         /// <param name="bookName">Name of the book.</param>
         /// <returns>returns the List of firstNames</returns>
@@ -199,12 +199,12 @@ namespace Object_Oriented_Programming.Address_Book
         }
 
         /// <summary>
-        /// Does the name exist.
+        /// checks whether the file exist.
         /// </summary>
         /// <param name="bookName">Name of the book.</param>
         /// <param name="name">The name.</param>
         /// <returns>returns true or false</returns>
-        public static bool DoesNameExist(string bookName, string name)
+        public static bool DoesFileNameExist(string bookName, string name)
         {
             AddressBook addressBook = Input.GetBookDetails(bookName);
             List<AddressDetails> list = addressBook.AddressDetailsList;

@@ -131,7 +131,7 @@
             {
                 ////Before distribute shuffle the cards
                 this.ShuffleCards(playerNumber);
-            }
+            } 
         }
 
         /// <summary>

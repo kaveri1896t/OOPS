@@ -98,6 +98,7 @@ namespace Object_Oriented_Programming.Commercial_Data_Processing
         {
             try
             {
+                ////check if the queue is full or not
                 if (this.rear == this.queueMaxSize - 1)
                 {
                     Console.WriteLine("Queue Overflow");
@@ -105,12 +106,14 @@ namespace Object_Oriented_Programming.Commercial_Data_Processing
                 }
                 else
                 {
+                    ////check if queue is empty
                     if (this.front == -1)
                     {
                         this.front = 0;
                     }
 
-                    this.rear++; //// adding from the rear ,hence increasing the value of rear when each element is added.
+                    this.rear++;
+                    //// adding element from the rear
                     this.queueArray[this.rear] = data;
                     this.size++;
                     return true;

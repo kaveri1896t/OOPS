@@ -20,49 +20,56 @@ namespace Object_Oriented_Programming.Commercial_Data_Processing
         /// </summary>
         public void InitialiseShares()
         {
-            StockAccount stockAccount = new StockAccount();
-            while (true)
+            try
             {
-                Console.WriteLine();
-                Console.WriteLine("1.To buy Share");
-                Console.WriteLine("2.To Sell a Share");
-                Console.WriteLine("3.To view Existing Shares");
-                Console.WriteLine("4.View Stock Symobol Purchased");
-
-                string stringOption = Console.ReadLine();
-
-                if (InventoryManagement.InventoryMngtUtility.IsNumber(stringOption) == false)
+                StockAccount stockAccount = new StockAccount();
+                while (true)
                 {
-                    Console.WriteLine("Invalid input");
-                    continue;
+                    Console.WriteLine();
+                    Console.WriteLine("1.Buy the Share");
+                    Console.WriteLine("2.Sell a Share");
+                    Console.WriteLine("3.View Existing Shares");
+                    Console.WriteLine("4.View Symobol Purchased");
+                    string input = Console.ReadLine();
+
+                    ////Check if the choice enterd by the user contains number
+                    if (InventoryManagement.InventoryMngtUtility.IsNumber(input) == false)
+                    {
+                        Console.WriteLine("Invalid input");
+                        continue;
+                    }
+
+                    ////convert that number to an integer type
+                    int option = Convert.ToInt32(input);
+
+                    //// Calls the method of user's choice
+                    switch (option)
+                    {
+                        case 1:
+                            InputFromUser.TakeUserInput(option);
+                            break;
+
+                        case 2:
+                            InputFromUser.TakeUserInput(option);
+                            break;
+
+                        case 3:
+                            stockAccount.PrintReport();
+                            break;
+
+                        case 4:
+                            StockAccount stockaccount = new StockAccount();
+                            stockaccount.PrintSymbols();
+                            break;
+
+                        default:
+                            return;
+                    }
                 }
-
-                int option = Convert.ToInt32(stringOption);
-
-                //// Calls the method based on choosen option by the user.
-                switch (option)
-                {
-                    case 1:
-                        InputFromUser.TakeUserInput(option);
-                        break;
-
-                    case 2:
-                        InputFromUser.TakeUserInput(option);
-                        break;
-
-                    case 3:
-                        stockAccount.PrintReport();
-                        break;
-
-                    case 4:
-                        StockAccount stockaccount = new StockAccount();
-                        stockaccount.PrintSymbols();
-                        break;
-
-                    default:
-                        Console.WriteLine("Invalid Input");
-                        return;
-                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
         }
     }
